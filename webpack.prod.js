@@ -92,7 +92,18 @@ module.exports = merge(common, {
       to: './static/',
       toType: 'dir'
     }]),
+
+    // NOTE: honestly, this did not help reduce prod bundle size... but for wtw:
+    // https://webpack.js.org/plugins/module-concatenation-plugin/
+    new webpack.optimize.ModuleConcatenationPlugin(),
+
     // NOTE: disable when needed, its just to analyze code
     configedAnalyzer
-  ]
+  ],
+  stats: {
+    // Examine all modules
+    maxModules: Infinity,
+    // Display bailout reasons
+    optimizationBailout: true
+  }
 });
