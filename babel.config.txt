@@ -1,0 +1,53 @@
+// module.exports = {
+//   presets: [
+//     [
+//       '@babel/preset-env',
+//       {
+//         modules: false
+//       }
+//     ]
+//   ],
+//   plugins: ['@babel/plugin-syntax-dynamic-import'],
+//   env: {
+//     development: {
+//       presets: [
+//         [
+//           '@babel/preset-env',
+//           {
+//             targets: {
+//               node: 'current'
+//             }
+//           }
+//         ]
+//       ]
+//     },
+//     //http://jira.ecom.chewy.com/browse/SFW-7224
+//     //NOTE: technically, jest is not using test section config right now,
+//     //because we currently have force NODE_ENV=development in bash profile (per README)
+//     //but kept it for jest in case the app is built in non-local machine without bash config in place
+//     test: {
+//       presets: [
+//         [
+//           '@babel/preset-env',
+//           {
+//             targets: {
+//               node: 'current'
+//             }
+//           }
+//         ]
+//       ]
+//     }
+//   }
+// };
+
+
+module.exports = {
+  presets: [
+    ['env', {
+      modules: false,
+      targets: {
+        browsers: ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }]
+  ]
+}

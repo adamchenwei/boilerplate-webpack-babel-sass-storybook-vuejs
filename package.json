@@ -5,10 +5,18 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config build/webpack.config.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
     "lint": "eslint --ext .js,.vue src",
-    "lint:fix": "eslint --ext .js,.vue src --fix"
+    "lint:fix": "eslint --ext .js,.vue src --fix",
+    "setup": "rm -rf ./node_modules/ && npm cache verify && npm install",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.vue$": "vue-jest"
+    }
   },
   "repository": {
     "type": "git",
@@ -31,12 +39,18 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.5",
+    "@storybook/vue": "^4.0.4",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "acorn": "^6.0.4",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-vue": "^2.0.2",
     "copy-webpack-plugin": "^4.5.4",
     "css-loader": "^1.0.0",
-    "eslint": "^5.7.0",
+    "eslint": "^5.9.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
@@ -45,9 +59,11 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^4.7.1",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.9.4",
+    "jest": "^23.6.0",
+    "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "vue-jest": "^3.0.0",
     "vue-loader": "^15.4.2",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.5.17",
