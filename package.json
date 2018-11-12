@@ -9,7 +9,8 @@
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
-    "setup": "rm -rf ./node_modules/ && npm cache verify && npm install"
+    "setup": "rm -rf ./node_modules/ && npm cache verify && npm install",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "jest": {
     "transform": {
@@ -39,12 +40,14 @@
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.5",
+    "@storybook/vue": "^4.0.4",
     "@vue/test-utils": "^1.0.0-beta.25",
     "acorn": "^6.0.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-vue": "^2.0.2",
     "copy-webpack-plugin": "^4.5.4",
     "css-loader": "^1.0.0",
     "eslint": "^5.9.0",
