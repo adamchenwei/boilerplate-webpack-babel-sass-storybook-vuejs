@@ -10,7 +10,8 @@
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
     "setup": "rm -rf ./node_modules/ && npm cache verify && npm install",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build:prod": "webpack --config webpack.prod.js"
   },
   "jest": {
     "transform": {
@@ -48,6 +49,7 @@
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-vue": "^2.0.2",
+    "clean-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^4.5.4",
     "css-loader": "^1.0.0",
     "eslint": "^5.9.0",
@@ -68,7 +70,9 @@
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.23.0",
+    "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
   }
 }
