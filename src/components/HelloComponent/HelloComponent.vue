@@ -1,7 +1,8 @@
 <template>
   <div>
+    <h1>In HelloComponent</h1>
     <h1>Hello {{ name }}!</h1>
-    <h2 class="wave">H2 Is here</h2>
+    <div class="wave">div Is here <h2>in side h2</h2></div>
   </div>
 </template>
 
@@ -16,8 +17,15 @@ export default {
 }
 </script>
 
-<style scoped>
- h1 {
-   color: orange;
- }
+<style lang="scss" scoped>
+  h1 {
+    color: orange;
+  }
+
+  .wave {
+    h2 {
+      color: red;
+    }
+    color: orchid;
+  }
 </style>

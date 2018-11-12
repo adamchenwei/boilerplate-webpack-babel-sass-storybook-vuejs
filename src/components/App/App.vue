@@ -12,11 +12,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   h2 {
-    color: mediumseagreen;
+    color: red;
     .wave {
-      color: orchid;
+      color: blue;
     }
   }
 </style>
