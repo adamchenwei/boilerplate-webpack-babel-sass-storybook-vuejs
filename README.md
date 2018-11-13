@@ -12,16 +12,19 @@
 [x]build production dist
 [x]build commonjs modules dist
 [x]build sass modules dist / build sass into component? -> becomes building sass into css files beside js component file
-[]npm-run-all for multi command
-[]test/dev watch
-[]test run one
-
+[] * jest report and coverage report into a file instead of in command line
+[] * npm-run-all for multi command
+[] * test/dev watch
+[] * test run one
+[] * assets handling (image etc)
+[]
+[]commitizen
 ## Good To Have / TBD
-[]storyshot
+[x]storyshot
 []custom storybook title and port
 []readme for storybook
 []changelog
-[]commitizen
+
 
 # Development
 `./d` or `npm run dev` to run development server
