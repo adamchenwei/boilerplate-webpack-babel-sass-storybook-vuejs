@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import TestAb from './TestAb.vue'
+import TestAb from './test-ab.vue'
 
 describe('TestAb', () => {
   it('should work', () => {

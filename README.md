@@ -9,9 +9,9 @@
 [x]vuejs test util
 [x]storybook
 [x]storybook with sass
-[]build production dist
-[]build commonjs modules dist
-[]build sass modules dist / build sass into component?
+[x]build production dist
+[x]build commonjs modules dist
+[x]build sass modules dist / build sass into component? -> becomes building sass into css files beside js component file
 []npm-run-all for multi command
 []test/dev watch
 []test run one
