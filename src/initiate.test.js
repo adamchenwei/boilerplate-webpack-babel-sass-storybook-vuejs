@@ -1,4 +1,3 @@
-import Vue from 'vue';
 import { shallowMount } from '@vue/test-utils'
 import App from './components/App/App.vue'
 import initStoryshots, { multiSnapshotWithOptions } from '@storybook/addon-storyshots'

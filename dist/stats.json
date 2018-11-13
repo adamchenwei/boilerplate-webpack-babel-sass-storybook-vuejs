@@ -7,8 +7,8 @@
   ],
   "version": "4.23.0",
   "hash": "70bce38156912ce95681",
-  "time": 2419,
-  "builtAt": 1542141981442,
+  "time": 1643,
+  "builtAt": 1542147162939,
   "publicPath": "",
   "outputPath": "/Users/achenwei/www/lab/boilerplate-webpack-babel-sass-storybook-vuejs/dist",
   "assetsByChunkName": {
