@@ -28,6 +28,11 @@
       "/node_modules/"
     ]
   },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adamchenwei/vuejs-playground.git"

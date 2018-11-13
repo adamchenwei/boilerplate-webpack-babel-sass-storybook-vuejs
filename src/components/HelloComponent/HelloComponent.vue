@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>YOOOOOO In HelloComponent</h1>
-    <h1>Hello {{ name }}!</h1>
+    <h1>Aloha Hello {{ name }}!</h1>
     <div class="wave">div Is here <h2>in side h2</h2></div>
   </div>
 </template>
