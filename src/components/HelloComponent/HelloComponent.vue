@@ -8,14 +8,14 @@
 
 <script>
 export default {
-  data () {
-    return {}
-  },
   props: {
     name: {
       type: String,
       required: true
     }
+  },
+  data () {
+    return {}
   }
 }
 </script>
