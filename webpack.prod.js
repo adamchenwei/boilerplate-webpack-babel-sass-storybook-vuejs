@@ -4,6 +4,7 @@ const webpack = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // const path = require('path')
 // function resolve (dir) {
@@ -57,17 +58,32 @@ module.exports = merge(common, {
         use: 'eslint-loader',
         enforce: 'pre' // kick in before other loader... Q: also before vue-loader I suppose? maybe better move it to top?
       },
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     'vue-style-loader',
+      //     'css-loader'
+      //   ]
+      // },
       {
         test: /\.css$/,
         use: [
-          'vue-style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader'
         ]
       },
+      // {
+      //   test: /\.scss$/,
+      //   use: [
+      //     'style-loader', // creates style nodes from JS strings
+      //     'css-loader', // translates CSS into CommonJS
+      //     'sass-loader' // compiles Sass to CSS, using Node Sass by default
+      //   ]
+      // },
       {
         test: /\.scss$/,
         use: [
-          'style-loader', // creates style nodes from JS strings
+          MiniCssExtractPlugin.loader,
           'css-loader', // translates CSS into CommonJS
           'sass-loader' // compiles Sass to CSS, using Node Sass by default
         ]
@@ -79,7 +95,7 @@ module.exports = merge(common, {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    // new webpack.HotModuleReplacementPlugin(),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
@@ -97,6 +113,10 @@ module.exports = merge(common, {
     // https://webpack.js.org/plugins/module-concatenation-plugin/
     new webpack.optimize.ModuleConcatenationPlugin(),
 
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    }),
     // NOTE: disable when needed, its just to analyze code
     configedAnalyzer
   ],

@@ -1,11 +1,11 @@
 import { shallowMount } from '@vue/test-utils'
-import HelloComponent from './HelloComponent.vue'
+import ByeComponent from './ByeComponent.vue'
 
-describe('HelloComponent', () => {
+describe('ByeComponent', () => {
   it('should work', () => {
-    const wrapper = shallowMount(HelloComponent, {
+    const wrapper = shallowMount(ByeComponent, {
       propsData: { name: 'myname' }
     });
-    expect(wrapper.findAll('.wave').length).toEqual(1)
+    expect(wrapper.findAll('.another-wave').length).toEqual(1)
   })
 });

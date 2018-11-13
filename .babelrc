@@ -1,5 +1,9 @@
 {
-	"presets": [ [ "@babel/preset-env", { "modules": false } ] ],
+	"presets": [ [ "@babel/preset-env", {
+		"targets": {
+			"esmodules": true
+		}
+	 } ] ],
 	"env": {
 		"development": { "presets": [ [ "@babel/preset-env", { "targets": { "node": "current" } } ] ] },
 		"test": { "presets": [ [ "@babel/preset-env", { "targets": { "node": "current" } } ] ] }
