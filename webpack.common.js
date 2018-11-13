@@ -7,7 +7,7 @@ function resolve (dir) {
 }
 module.exports = {
   entry: {
-    app: './src/library.js',
+    library: './src/library.js',
     HelloComp: './src/components/HelloComponent/HelloComponent.vue',
     Bye: './src/components/ByeComponent/ByeComponent.vue',
     MiniC: './src/components/MiniC/MiniC.vue'

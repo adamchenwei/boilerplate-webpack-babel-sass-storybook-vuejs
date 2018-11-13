@@ -6,9 +6,9 @@
     "webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/"
   ],
   "version": "4.23.0",
-  "hash": "83472b8cfa02821e07c7",
-  "time": 1949,
-  "builtAt": 1542121518423,
+  "hash": "ffd02c076440bf47fdb6",
+  "time": 1185,
+  "builtAt": 1542123330810,
   "publicPath": "",
   "outputPath": "/Users/achenwei/www/lab/boilerplate-webpack-babel-sass-storybook-vuejs/dist",
   "assetsByChunkName": {
@@ -24,9 +24,9 @@
       "MiniC.css",
       "MiniC.js"
     ],
-    "app": [
-      "app.css",
-      "app.js"
+    "library": [
+      "library.css",
+      "library.js"
     ]
   },
   "assets": [
@@ -64,7 +64,7 @@
       "emitted": true
     },
     {
-      "name": "app.js",
+      "name": "library.js",
       "size": 3638,
       "chunks": [
         3,
@@ -73,20 +73,20 @@
         2
       ],
       "chunkNames": [
-        "app"
+        "library"
       ],
       "emitted": true
     }
   ],
   "filteredAssets": 0,
   "entrypoints": {
-    "app": {
+    "library": {
       "chunks": [
         3
       ],
       "assets": [
-        "app.css",
-        "app.js"
+        "library.css",
+        "library.js"
       ],
       "children": {
       },
@@ -134,13 +134,13 @@
     }
   },
   "namedChunkGroups": {
-    "app": {
+    "library": {
       "chunks": [
         3
       ],
       "assets": [
-        "app.css",
-        "app.js"
+        "library.css",
+        "library.js"
       ],
       "children": {
       },
@@ -2461,13 +2461,13 @@
       "entry": true,
       "size": 13240,
       "names": [
-        "app"
+        "library"
       ],
       "files": [
-        "app.css",
-        "app.js"
+        "library.css",
+        "library.js"
       ],
-      "hash": "bfe33f4de68a8c0f6d49",
+      "hash": "24f31bb9536f817aed36",
       "siblings": [
       ],
       "parents": [
@@ -4290,7 +4290,7 @@
               "moduleName": null,
               "type": "single entry",
               "userRequest": "./src/library.js",
-              "loc": "app"
+              "loc": "library"
             }
           ],
           "usedExports": true,
@@ -4477,7 +4477,7 @@
           "module": "",
           "moduleIdentifier": "",
           "moduleName": "",
-          "loc": "app",
+          "loc": "library",
           "request": "./src/library.js",
           "reasons": [
           ]
@@ -6299,7 +6299,7 @@
           "moduleName": null,
           "type": "single entry",
           "userRequest": "./src/library.js",
-          "loc": "app"
+          "loc": "library"
         }
       ],
       "usedExports": true,
