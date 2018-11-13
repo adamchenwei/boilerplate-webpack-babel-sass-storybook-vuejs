@@ -10,7 +10,9 @@ module.exports = {
     library: './src/library.js',
     HelloComp: './src/components/HelloComponent/HelloComponent.vue',
     Bye: './src/components/ByeComponent/ByeComponent.vue',
-    MiniC: './src/components/MiniC/MiniC.vue'
+    MiniC: './src/components/MiniC/MiniC.vue',
+    TestAb: './src/components/test-ab/test-ab.vue'
+
   },
   plugins: [
     new CleanWebpackPlugin(['dist'])
