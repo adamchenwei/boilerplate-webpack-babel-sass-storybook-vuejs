@@ -1,8 +1,8 @@
 {
   "name": "boilerplate-webpack-babel-sass-storybook-vuejs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "vuejs playground with various setups",
-  "main": "dist/index.js",
+  "main": "dist/library.js",
   "scripts": {
     "build": "webpack --config build/webpack.config.dev.js",
     "test": "jest",
