@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/components/ByeComponent/ByeComponent.vue</title>
+    <title>Code coverage report for src/components/App/App.vue</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/ByeComponent</a> ByeComponent.vue
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/App</a> App.vue
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>2/2</span>
       </div>
     </div>
   </div>
@@ -69,37 +69,15 @@
 24
 25
 26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+27</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -118,40 +96,29 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-  &lt;div&gt;
-    &lt;h1&gt;In ByeComponent&lt;/h1&gt;
-    &lt;h1&gt;Bye {{ name }}!&lt;/h1&gt;
-    &lt;div class="another-wave lololo"&gt;div Is here &lt;h2&gt;in side h2&lt;/h2&gt;&lt;/div&gt;
+  &lt;div class="full-width center-content"&gt;
+    &lt;hello-component name="HELLO" /&gt;
+    &lt;bye-component name="BYE" /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&nbsp;
 &lt;script&gt;
+import HelloComponent from '../HelloComponent/HelloComponent.vue'
+import ByeComponent from '../ByeComponent/ByeComponent.vue'
+&nbsp;
 export default {
-  props: {
-    name: {
-      type: String,
-      required: true
-    }
-  },
-  data () {
-    return {}
+  components: {
+    HelloComponent,
+    ByeComponent
   }
 }
 &lt;/script&gt;
 &nbsp;
 &lt;style lang="scss" scoped&gt;
-  h1 {
-    color: cyan;
-  }
-  .lololo {
+  h2 {
     color: red;
-  }
-&nbsp;
-  .another-wave {
-    h2 {
+    .wave {
       color: blue;
     }
-    color: steelblue;
   }
 &lt;/style&gt;
 &nbsp;</pre></td></tr>

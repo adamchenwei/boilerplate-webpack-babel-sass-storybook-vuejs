@@ -5,7 +5,7 @@
 		}
 	 } ] ],
 	"env": {
-		"development": { "presets": [ [ "@babel/preset-env", { "targets": { "node": "current" } } ] ] },
-		"test": { "presets": [ [ "@babel/preset-env", { "targets": { "node": "current" } } ] ] }
+		"development": { "presets": [ [ "@babel/preset-env", { "targets": { "node": "current" } } ] ], "plugins": ["require-context-hook"] },
+		"test": { "presets": [ [ "@babel/preset-env", { "targets": { "node": "current" } } ] ], "plugins": ["require-context-hook"] }
 	}
 }

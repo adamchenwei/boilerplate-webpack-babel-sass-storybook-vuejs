@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots HelloComponent default 1`] = `
+<div>
+  <h1>
+    YOOOOOO In HelloComponent
+  </h1>
+   
+  <h1>
+    Aloha Hello Adam!
+  </h1>
+   
+  <div
+    class="wave"
+  >
+    div Is here 
+    <h2>
+      in side h2
+    </h2>
+  </div>
+</div>
+`;
