@@ -58,6 +58,19 @@ module.exports = merge(common, {
         use: 'eslint-loader',
         enforce: 'pre' // kick in before other loader... Q: also before vue-loader I suppose? maybe better move it to top?
       },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              filename: '[name].css'
+            }
+          },
+          'css-loader', // translates CSS into CommonJS
+          'sass-loader' // compiles Sass to CSS, using Node Sass by default
+        ]
+      },
       // {
       //   test: /\.css$/,
       //   use: [
@@ -75,19 +88,12 @@ module.exports = merge(common, {
       // {
       //   test: /\.scss$/,
       //   use: [
+      //     MiniCssExtractPlugin.loader,
       //     'style-loader', // creates style nodes from JS strings
       //     'css-loader', // translates CSS into CommonJS
       //     'sass-loader' // compiles Sass to CSS, using Node Sass by default
       //   ]
       // },
-      {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader', // translates CSS into CommonJS
-          'sass-loader' // compiles Sass to CSS, using Node Sass by default
-        ]
-      },
       {
         test: /\.js$/,
         use: 'babel-loader'
