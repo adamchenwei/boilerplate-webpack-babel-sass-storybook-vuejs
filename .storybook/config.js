@@ -1,4 +1,5 @@
 import { configure } from '@storybook/vue';
+import initStoryshots, { multiSnapshotWithOptions } from '@storybook/addon-storyshots';
 
 import Vue from 'vue';
 // import Vuex from 'vuex'; // Vue plugins
@@ -11,17 +12,6 @@ import Vue from 'vue';
 
 // // Register custom components.
 // Vue.component('HelloComponent', HelloComponent);
-
-// NOTE: basic storybook config for multi stories
-// function requireAll(requireContext) {
-//   return requireContext.keys().map(requireContext);
-// }
-
-// function loadStories() {
-//   requireAll(require.context("../src/", true, /.stories.js$/));
-// }
-
-// configure(loadStories, module);
 
 // NOTE: storyshot configs
 const req = require.context('../src/components', true, /.stories.js$/); // <- import all the stories at once

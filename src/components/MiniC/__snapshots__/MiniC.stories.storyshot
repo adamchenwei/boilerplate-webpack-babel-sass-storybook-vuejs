@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots MiniC default 1`] = `
+<h1
+  class="c"
+>
+  MiniC Eve!
+</h1>
+`;

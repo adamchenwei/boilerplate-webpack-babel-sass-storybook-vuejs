@@ -1,11 +1,12 @@
 {
   "name": "boilerplate-webpack-babel-sass-storybook-vuejs",
-  "version": "0.0.3",
+  "version": "0.0.9",
   "description": "vuejs playground with various setups",
   "main": "dist/library.js",
   "scripts": {
     "build": "webpack --config build/webpack.config.dev.js",
-    "test": "jest",
+    "test": "jest --coverage --verbose --no-cache",
+    "test:update": "jest --updateSnapshot",
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
@@ -14,9 +15,26 @@
     "build:prod": "webpack --config webpack.prod.js"
   },
   "jest": {
+    "setupFiles": [
+      "<rootDir>/build/jest/register-context.js"
+    ],
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.vue$": "vue-jest"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js}",
+      "src/**/*.{vue}",
+      "!src/**/*.stories.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
     }
   },
   "repository": {
@@ -41,12 +59,14 @@
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.5",
-    "@storybook/vue": "^4.0.4",
+    "@storybook/addon-storyshots": "^4.0.6",
+    "@storybook/vue": "^4.0.6",
     "@vue/test-utils": "^1.0.0-beta.25",
     "acorn": "^6.0.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
+    "babel-plugin-require-context-hook": "^1.0.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-vue": "^2.0.2",
     "clean-webpack-plugin": "^1.0.0",

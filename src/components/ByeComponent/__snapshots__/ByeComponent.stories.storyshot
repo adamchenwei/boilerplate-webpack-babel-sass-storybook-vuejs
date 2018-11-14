@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ByeComponent default 1`] = `
+<div>
+  <h1>
+    In ByeComponent
+  </h1>
+   
+  <h1>
+    Bye Eve!
+  </h1>
+   
+  <div
+    class="another-wave lololo"
+  >
+    div Is here 
+    <h2>
+      in side h2
+    </h2>
+  </div>
+</div>
+`;

@@ -8,4 +8,3 @@ storiesOf('HelloComponent', module)
     components: { HelloComponent },
     template: '<HelloComponent name="Adam"/>'
   }))
-  
