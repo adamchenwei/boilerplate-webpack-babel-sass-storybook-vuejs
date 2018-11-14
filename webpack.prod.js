@@ -5,6 +5,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // const path = require('path')
 // function resolve (dir) {
@@ -61,14 +62,29 @@ module.exports = merge(common, {
       {
         test: /\.scss$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              filename: '[name].css'
-            }
-          },
+          // {
+          //   loader: ExtractTextPlugin.extract([
+          //     MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
+          //   ])
+          //   // loader: MiniCssExtractPlugin.loader,
+          //   // options: {
+          //   //   filename: '[name].css'
+          //   // }
+          // },
+
+
+          MiniCssExtractPlugin.loader,
           'css-loader', // translates CSS into CommonJS
           'sass-loader' // compiles Sass to CSS, using Node Sass by default
+
+          // Attempt to extract by scss file name
+          // ExtractTextPlugin.extract({
+          //   loader: [
+          //     MiniCssExtractPlugin.loader,
+          //     'css-loader', // translates CSS into CommonJS
+          //     'sass-loader' // compiles Sass to CSS, using Node Sass by default
+          //   ]
+          // })
         ]
       },
       // {
@@ -123,6 +139,7 @@ module.exports = merge(common, {
       filename: "[name].css",
       chunkFilename: "[id].css"
     }),
+    new ExtractTextPlugin("./dist/css/[name].scss"),
     // NOTE: disable when needed, its just to analyze code
     configedAnalyzer
   ],
