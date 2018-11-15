@@ -1,5 +1,4 @@
 import { configure } from '@storybook/vue';
-import initStoryshots, { multiSnapshotWithOptions } from '@storybook/addon-storyshots';
 
 import Vue from 'vue';
 // import Vuex from 'vuex'; // Vue plugins
