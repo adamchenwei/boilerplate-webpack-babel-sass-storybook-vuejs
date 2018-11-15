@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1542147152322" clover="3.2.0">
-  <project timestamp="1542147152323" name="All files">
-    <metrics statements="14" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0" elements="16" coveredelements="4" complexity="0" loc="14" ncloc="14" packages="4" files="5" classes="5">
+<coverage generated="1542295229855" clover="3.2.0">
+  <project timestamp="1542295229855" name="All files">
+    <metrics statements="15" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0" elements="17" coveredelements="4" complexity="0" loc="15" ncloc="15" packages="4" files="5" classes="5">
       <package name="src">
-        <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <metrics statements="11" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <file name="app.js" path="/Users/achenwei/www/lab/boilerplate-webpack-babel-sass-storybook-vuejs/src/app.js">
           <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -14,11 +14,12 @@
           <line num="10" count="0" type="stmt"/>
         </file>
         <file name="library.js" path="/Users/achenwei/www/lab/boilerplate-webpack-babel-sass-storybook-vuejs/src/library.js">
-          <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
           <line num="2" count="0" type="stmt"/>
           <line num="3" count="0" type="stmt"/>
           <line num="4" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
         </file>
       </package>
       <package name="src.components.App">
