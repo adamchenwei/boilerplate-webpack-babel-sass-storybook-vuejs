@@ -11,8 +11,8 @@ module.exports = {
     HelloComp: './src/components/HelloComponent/HelloComponent.vue',
     Bye: './src/components/ByeComponent/ByeComponent.vue',
     MiniC: './src/components/MiniC/MiniC.vue',
-    TestAb: './src/components/test-ab/test-ab.vue'
-
+    TestAb: './src/components/test-ab/test-ab.vue',
+    'library-global-styles': './src/library-global-styles.scss'
   },
   plugins: [
     new CleanWebpackPlugin(['dist'])
