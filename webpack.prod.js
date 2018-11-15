@@ -125,9 +125,9 @@ module.exports = merge(common, {
       inject: true
     }),
     new CopyWebpackPlugin([{
-      // NOTE: it does not really do anything, unless we have a asset folder, that needed no compression
-      from: './static/',
-      to: './static/',
+      from: './src/static/',
+      // NOTE: this 'to' is actually means move stuff to "[root dir]/public"
+      to: '../public/',
       toType: 'dir'
     }]),
 
@@ -139,7 +139,7 @@ module.exports = merge(common, {
       filename: "[name].css",
       chunkFilename: "[id].css"
     }),
-    new ExtractTextPlugin("./dist/css/[name].scss"),
+    // new ExtractTextPlugin("./dist/css/[name].scss"),
     // NOTE: disable when needed, its just to analyze code
     configedAnalyzer
   ],

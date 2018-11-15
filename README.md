@@ -15,7 +15,7 @@
 [x]build commonjs modules dist
 [x]build sass modules dist / build sass into component? -> becomes building sass into css files beside js component file
 [x]storyshot
-[] * test run one
+[x] * test run one
 [] * assets handling (image etc) (in storybook & build)
 [] * jest report and coverage report into a file instead of in command line
 [] * jest moxios & other mock setup

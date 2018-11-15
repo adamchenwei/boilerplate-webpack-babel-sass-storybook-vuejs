@@ -2,13 +2,13 @@
   "errors": [
   ],
   "warnings": [
-    "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  static/audio/airplane-landing_daniel_simion.mp3 (298 KiB)",
+    "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  ../public/audio/airplane-landing_daniel_simion.mp3 (298 KiB)",
     "webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/"
   ],
   "version": "4.23.0",
   "hash": "140c2a41b3560c3b4025",
-  "time": 1741,
-  "builtAt": 1542226166195,
+  "time": 1418,
+  "builtAt": 1542302129669,
   "publicPath": "",
   "outputPath": "/Users/achenwei/www/lab/boilerplate-webpack-babel-sass-storybook-vuejs/dist",
   "assetsByChunkName": {
