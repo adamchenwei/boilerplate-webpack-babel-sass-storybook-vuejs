@@ -16,7 +16,7 @@
 [x]build sass modules dist / build sass into component? -> becomes building sass into css files beside js component file
 [x]storyshot
 [x] * test run one
-[] * assets handling (image etc) (in storybook & build)
+[x] * assets handling (image etc) (in storybook & build)
 [] * jest report and coverage report into a file instead of in command line
 [] * jest moxios & other mock setup
 [] * npm-run-all for multi command (storybook + jest watch)
