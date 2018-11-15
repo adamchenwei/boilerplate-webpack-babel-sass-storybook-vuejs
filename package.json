@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --config build/webpack.config.dev.js",
     "test": "jest --coverage --verbose --no-cache",
+    "test:one": "jest",
     "test:update": "jest --updateSnapshot",
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
     "lint": "eslint --ext .js,.vue src",
@@ -22,7 +23,6 @@
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.vue$": "vue-jest"
     },
-    "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{js}",
       "src/**/*.{vue}",
