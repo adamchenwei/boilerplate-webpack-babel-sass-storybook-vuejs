@@ -34,8 +34,8 @@ TN:
 SF:/Users/achenwei/www/lab/boilerplate-webpack-babel-sass-storybook-vuejs/src/components/App/App.vue
 FNF:0
 FNH:0
-DA:8,1
-DA:9,1
+DA:2,1
+DA:3,1
 LF:2
 LH:2
 BRF:0
@@ -45,7 +45,7 @@ TN:
 SF:/Users/achenwei/www/lab/boilerplate-webpack-babel-sass-storybook-vuejs/src/components/ByeComponent/ByeComponent.vue
 FNF:0
 FNH:0
-DA:18,2
+DA:10,2
 LF:1
 LH:1
 BRF:0
@@ -55,7 +55,7 @@ TN:
 SF:/Users/achenwei/www/lab/boilerplate-webpack-babel-sass-storybook-vuejs/src/components/HelloComponent/HelloComponent.vue
 FNF:0
 FNH:0
-DA:18,2
+DA:10,2
 LF:1
 LH:1
 BRF:0
