@@ -1,7 +1,0 @@
-{
-	"presets": [ [ "@babel/preset-env", { "modules": false } ] ],
-	"env": {
-		"development": { "presets": [ [ "@babel/preset-env", { "targets": { "node": "current" } } ] ] },
-		"test": { "presets": [ [ "@babel/preset-env", { "targets": { "node": "current" } } ] ] }
-	}
-}

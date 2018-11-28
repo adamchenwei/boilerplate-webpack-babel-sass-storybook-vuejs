@@ -32,9 +32,9 @@
 ## Good To Have
 []storyshot
 []readme for storybook
+[]allow individual component import instead of whole lib import
 
-
-## Close to completion
+## When close to completion
 [] coverage threashold to 99%
 [] setup private org repo
 [] private npm repo deployment
@@ -48,3 +48,4 @@
 
 `./b` or `npm run build` to build dist file
 
+## it works closely with vue-dependency-demo to show how it gets injected

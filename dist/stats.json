@@ -6,9 +6,9 @@
     "webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/"
   ],
   "version": "4.23.0",
-  "hash": "140c2a41b3560c3b4025",
-  "time": 1418,
-  "builtAt": 1542302129669,
+  "hash": "9e567d43282cceaae1ad",
+  "time": 2224,
+  "builtAt": 1543434995199,
   "publicPath": "",
   "outputPath": "/Users/achenwei/www/lab/boilerplate-webpack-babel-sass-storybook-vuejs/dist",
   "assetsByChunkName": {
@@ -9108,7 +9108,7 @@
       "assets": [
         {
           "name": "index.html",
-          "size": 545561,
+          "size": 545728,
           "chunks": [
             0
           ],
@@ -9151,13 +9151,13 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 541611,
+          "size": 541778,
           "names": [
           ],
           "files": [
             "index.html"
           ],
-          "hash": "66128a652fc501f434f5",
+          "hash": "5f1a04bc6ff38ca3d581",
           "siblings": [
           ],
           "parents": [
@@ -9173,7 +9173,7 @@
               "name": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
               "index": 0,
               "index2": 3,
-              "size": 718,
+              "size": 885,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -9207,7 +9207,7 @@
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0,
-              "source": "var _ = require(\"!!./node_modules/lodash/lodash.js\");module.exports = function (templateParams) { with(templateParams) {return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\n<html>\\n  <head>\\n    <meta charset=\"utf-8\">\\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\\n    <title>Vuejs 1Playground</title>\\n  </head>\\n  <body>\\n    <div id=\"app\"></div>\\n    <!-- If we enable this line, it will cause problem and console error of #app not found -->\\n    <!-- ref: https://stackoverflow.com/questions/45368881/vue-warn-cannot-find-element-app-vue-js-2 -->\\n    <!-- <script defer src=\"dist/main.js\" type=\"text/javascript\"></script> -->\\n  </body>\\n</html>\\n';\nreturn __p\n})();}}"
+              "source": "var _ = require(\"!!./node_modules/lodash/lodash.js\");module.exports = function (templateParams) { with(templateParams) {return (function(data) {\nvar __t, __p = '';\n__p += '<!-- NOTE: leave it for when this repo becomes also can build as application by itself-->\\n\\n<!-- <!DOCTYPE html>\\n<html>\\n  <head>\\n    <meta charset=\"utf-8\">\\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\\n    <title>Vuejs 1Playground</title>\\n  </head>\\n  <body>\\n    <div id=\"app\"></div> -->\\n\\n    <!-- DISALBE BEG -->\\n    <!-- If we enable this line, it will cause problem and console error of #app not found -->\\n    <!-- ref: https://stackoverflow.com/questions/45368881/vue-warn-cannot-find-element-app-vue-js-2 -->\\n    <!-- <script defer src=\"dist/main.js\" type=\"text/javascript\"></script> -->\\n    <!-- DISALBE END -->\\n\\n  <!-- </body>\\n</html> -->\\n';\nreturn __p\n})();}}"
             },
             {
               "id": 1,
@@ -9388,7 +9388,7 @@
           "name": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
           "index": 0,
           "index2": 3,
-          "size": 718,
+          "size": 885,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9422,7 +9422,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "var _ = require(\"!!./node_modules/lodash/lodash.js\");module.exports = function (templateParams) { with(templateParams) {return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\n<html>\\n  <head>\\n    <meta charset=\"utf-8\">\\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\\n    <title>Vuejs 1Playground</title>\\n  </head>\\n  <body>\\n    <div id=\"app\"></div>\\n    <!-- If we enable this line, it will cause problem and console error of #app not found -->\\n    <!-- ref: https://stackoverflow.com/questions/45368881/vue-warn-cannot-find-element-app-vue-js-2 -->\\n    <!-- <script defer src=\"dist/main.js\" type=\"text/javascript\"></script> -->\\n  </body>\\n</html>\\n';\nreturn __p\n})();}}"
+          "source": "var _ = require(\"!!./node_modules/lodash/lodash.js\");module.exports = function (templateParams) { with(templateParams) {return (function(data) {\nvar __t, __p = '';\n__p += '<!-- NOTE: leave it for when this repo becomes also can build as application by itself-->\\n\\n<!-- <!DOCTYPE html>\\n<html>\\n  <head>\\n    <meta charset=\"utf-8\">\\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\\n    <title>Vuejs 1Playground</title>\\n  </head>\\n  <body>\\n    <div id=\"app\"></div> -->\\n\\n    <!-- DISALBE BEG -->\\n    <!-- If we enable this line, it will cause problem and console error of #app not found -->\\n    <!-- ref: https://stackoverflow.com/questions/45368881/vue-warn-cannot-find-element-app-vue-js-2 -->\\n    <!-- <script defer src=\"dist/main.js\" type=\"text/javascript\"></script> -->\\n    <!-- DISALBE END -->\\n\\n  <!-- </body>\\n</html> -->\\n';\nreturn __p\n})();}}"
         },
         {
           "id": 1,

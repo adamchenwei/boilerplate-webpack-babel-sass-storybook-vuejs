@@ -1,4 +1,5 @@
-// // Hum... dont really need dev, since I really just need storybook!
+// NOTE: TICKET#-???: Dont really need dev, since I really just need storybook, for now,
+// But keeping this structure for when it needed to build independent application in the future
 // const merge = require('webpack-merge');
 // const common = require('./webpack.common.js');
 
