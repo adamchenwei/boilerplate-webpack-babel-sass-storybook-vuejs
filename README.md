@@ -1,5 +1,7 @@
 # Boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/adamchenwei/boilerplate-webpack-babel-sass-storybook-vuejs.svg)](https://greenkeeper.io/)
+
 
 # Features List
 ## Must Have
